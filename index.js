@@ -20,7 +20,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect();
+    await client.connect(); // connect to MongoDB
 
     const database = client.db("carMechanic");
     const serviceCollection = database.collection("services");
